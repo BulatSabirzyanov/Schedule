@@ -68,4 +68,5 @@ dependencies {
 
     implementation(project(":common"))
     implementation(project(":schedule"))
+    implementation(project(":schedule-detail"))
 }
