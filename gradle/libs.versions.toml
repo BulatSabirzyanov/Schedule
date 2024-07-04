@@ -36,15 +36,11 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 cicerone = { module = "com.github.terrakok:cicerone", version.ref = "cicerone" }
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 
-
 # Vivid Money Libraries
 vivid-elmslie-core = { module = "money.vivid.elmslie:elmslie-core", version.ref = "elmslie" }
 vivid-elmslie-android = { module = "money.vivid.elmslie:elmslie-android", version.ref = "elmslie" }
-
-
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 ksp = {id = "com.google.devtools.ksp", version.ref = "ksp"}
-
