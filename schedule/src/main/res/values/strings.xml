@@ -1,0 +1,7 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_create">Создать</string>
+    <string name="tv_create_fragment">Создание списка</string>
+    <string name="create_et_hint">Напишите название списка</string>
+    <string name="btn_create_fragment">Создать</string>
+</resources>

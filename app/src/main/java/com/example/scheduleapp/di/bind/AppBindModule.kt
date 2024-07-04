@@ -4,7 +4,9 @@ import dagger.Module
 
 @Module(
     includes = [
-        ScheduleDepsBindModule::class
+        ScheduleDepsBindModule::class,
+        ScheduleDetailDepsBindModule::class,
+        ScheduleDetailUiDepsBindModule::class,
     ]
 )
 class AppBindModule

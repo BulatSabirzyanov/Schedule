@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.2"
+elmslie  = "3.0.0-beta1"
 kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -34,6 +35,12 @@ androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navi
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 cicerone = { module = "com.github.terrakok:cicerone", version.ref = "cicerone" }
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+
+
+# Vivid Money Libraries
+vivid-elmslie-core = { module = "money.vivid.elmslie:elmslie-core", version.ref = "elmslie" }
+vivid-elmslie-android = { module = "money.vivid.elmslie:elmslie-android", version.ref = "elmslie" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

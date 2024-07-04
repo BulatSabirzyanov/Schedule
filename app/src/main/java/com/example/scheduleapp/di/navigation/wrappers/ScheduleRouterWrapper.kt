@@ -13,6 +13,10 @@ class ScheduleRouterWrapper @Inject constructor(
         router.navigateTo(Screens.Schedule())
     }
 
+    override fun navigateToScheduleDetails() {
+        router.navigateTo(Screens.ScheduleDetail())
+    }
+
     override fun navigateToCreateScheduleItem() {
         router.navigateTo(Screens.CreateScheduleItem())
     }
