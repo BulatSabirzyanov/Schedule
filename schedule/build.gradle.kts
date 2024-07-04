@@ -1,21 +1,18 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.example.scheduleapp"
+    namespace = "com.example.schedule"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.scheduleapp"
         minSdk = 28
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -45,8 +42,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
 
     //db lib room
     implementation(libs.androidx.room.ktx)
@@ -56,18 +51,20 @@ dependencies {
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)
 
-    // viewModel lib
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-
     // navigation lib
     implementation(libs.cicerone)
+
+    // insert pics lib
+    implementation(libs.coil)
+
+    // viewModel lib
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(project(":common"))
-    implementation(project(":schedule"))
-    implementation(project(":schedule-detail"))
-    implementation(project(":schedule-detail-ui"))
+
 }

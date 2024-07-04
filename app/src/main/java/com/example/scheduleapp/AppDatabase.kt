@@ -21,7 +21,7 @@ abstract class AppDatabase : RoomDatabase(), ScheduleDatabase , ScheduleDetailDa
 
     abstract override fun scheduleListDao(): ScheduleListDao
 
-    abstract override fun scheduleItemDao(): ScheduleDetailItemDao
+    abstract override fun scheduleDetailListItemDao(): ScheduleDetailItemDao
 
     companion object {
         const val DB_NAME = "AppDataBase"
