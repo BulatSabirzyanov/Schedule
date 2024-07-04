@@ -2,6 +2,8 @@ package com.example.scheduleapp.di
 
 import android.content.Context
 import com.example.common.di.holder.DiComponent
+import com.example.schedule.detail.di.deps.ScheduleDetailDeps
+import com.example.schedule.detail.ui.di.deps.ScheduleDetailUiDeps
 import com.example.schedule.di.deps.ScheduleDeps
 import com.example.scheduleapp.MainActivity
 import com.example.scheduleapp.MainFragment
@@ -15,7 +17,7 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [AppModule::class])
-interface AppComponent : ScheduleDeps, DiComponent {
+interface AppComponent : ScheduleDeps, ScheduleDetailDeps, ScheduleDetailUiDeps, DiComponent {
 
     fun inject(mainActivity: MainActivity)
 
